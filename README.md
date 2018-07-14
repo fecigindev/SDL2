@@ -5,6 +5,9 @@
 -lopengl32 -lglut32 -lglew32 -lglew32mix
 
 Requires:
+
 include/SDL2
+
 lib
+
 SDL2.dll
