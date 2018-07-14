@@ -7,4 +7,5 @@
 Requires:<br>
 include/SDL2<br>
 lib<br>
+bin<br>
 SDL2.dll<br>
