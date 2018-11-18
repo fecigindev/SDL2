@@ -1,5 +1,0 @@
-.\SDL2-2.0.8\i686-w64-mingw32\include
-..\SDL2-2.0.8\i686-w64-mingw32\lib
--lmingw32 -lSDLmain -lSDL
-copypaste file SDL2.dll
-C:\Windows\System32
