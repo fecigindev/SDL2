@@ -10,4 +10,4 @@ lib<br>
 bin<br>
 SDL2.dll<br>
 
-<a href="https://nuwen.net/mingw.html">mingw32</a>
+silahkan download disini <a href="https://nuwen.net/mingw.html">mingw32</a>
