@@ -2,7 +2,7 @@
 
 #include <SDL.h>
 #include <stdio.h>
-//Screen dimension constants
+
 const int labar = 640;
 const int tinggi = 480;
 
