@@ -14,7 +14,9 @@ int main( int argc, char* args[] )
 	SDL_Surface* screenSurface = NULL;
 
     //Create window
-    window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN );
+    window = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+			      SCREEN_WIDTH, SCREEN_HEIGHT,
+			      SDL_WINDOW_SHOWN );
 
     screenSurface = SDL_GetWindowSurface( window );
 
