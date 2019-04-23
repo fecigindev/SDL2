@@ -1,4 +1,4 @@
-//Using SDL and standard IO
+//© 2019 copyright fecigindev
 #include <SDL.h>
 #include <stdio.h>
 #include <conio.h>
@@ -8,39 +8,36 @@
 
 void close()
 {
-	//Deallocate surface
 	SDL_FreeSurface( gXOut );
 	gXOut = NULL;
 
-	//Destroy window
 	SDL_DestroyWindow( gWindow );
 	gWindow = NULL;
 
-	//Quit SDL subsystems
 	SDL_Quit();
 }
 
 int main( int argc, char* args[] )
 {
-	//Start up SDL and create window
+    //panggil fungsi create window
     init();
 
-    //Load media
+    //panggil fungsi Load media
     loadMedia();
 
-    //Main loop flag
+    //seupaya aplikasi terus berjalan
     bool quit = false;
 
     //Event handler
     SDL_Event e;
 
-    //While application is running
+    //aplikasi terusberjalan
     while( !quit )
     {
-        //Handle events on queue
+        //hendle event
         while( SDL_PollEvent( &e ) != 0 )
         {
-            //User requests quit
+            //tunggu penguna mengklik quit
             if( e.type == SDL_QUIT )
             {
                 quit = true;
@@ -48,12 +45,10 @@ int main( int argc, char* args[] )
             }
         }
 
-        //Apply the image
+        //masuk gambar ke aplikasi
         SDL_BlitSurface( gXOut, NULL, gScreenSurface, NULL );
 
-        //Update the surface
+        //apply gambar ke aplikasi
         SDL_UpdateWindowSurface( gWindow );
     }
-
-	return 0;
 }
