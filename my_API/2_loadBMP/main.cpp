@@ -1,4 +1,6 @@
-//© 2019 copyright fecigindev
+// © 2019 copyright fecigindev
+
+// panggil header file
 #include <SDL.h>
 #include <stdio.h>
 #include <conio.h>
