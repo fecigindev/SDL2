@@ -1,28 +1,30 @@
-//Screen dimension constants
+//© 2019 copyright fecigindev
+
+//atur window screen
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
-//Starts up SDL and creates window
+//define fungsi init
 bool init();
 
-//Loads media
+//define fungsi loads media
 bool loadMedia();
 
-//Frees media and shuts down SDL
+//tutup aplikasi
 void close();
 
-//The window we'll be rendering to
+//window akan di render
 SDL_Window* gWindow = NULL;
 
-//The surface contained by the window
+//untuk membuat konten dalam window
 SDL_Surface* gScreenSurface = NULL;
 
-//The image we will load and show on the screen
+//gambar akan di load ke sini
 SDL_Surface* gXOut = NULL;
 
 bool init()
 {
-	//Initialization flag
+	
 	bool success = true;
 
 	//Initialize SDL
@@ -33,7 +35,7 @@ bool init()
 	}
 	else
 	{
-		//Create window
+		//buat windows
 		gWindow = SDL_CreateWindow( "SDL Tutorial", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
 					   SCREEN_WIDTH, SCREEN_HEIGHT,
 					   SDL_WINDOW_SHOWN );
@@ -44,7 +46,6 @@ bool init()
 		}
 		else
 		{
-			//Get window surface
 			gScreenSurface = SDL_GetWindowSurface( gWindow );
 		}
 	}
